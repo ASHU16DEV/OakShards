@@ -1,0 +1,60 @@
+name: OakShards
+version: ${project.version}
+main: com.oakshards.OakShards
+api-version: 1.16
+author: ASHU16
+description: AFK-based shard currency plugin with configurable GUI shop
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  shards:
+    description: View your shard balance
+    usage: /<command> [top|player]
+    aliases: [shard]
+  shardshop:
+    description: Open the shard shop
+    usage: /<command>
+    aliases: [oakshop, shardstore]
+  afkinfo:
+    description: View your AFK status
+    usage: /<command>
+  oakshards:
+    description: OakShards admin commands
+    usage: /<command> <subcommand>
+    aliases: [oakshard, oaksh, os]
+
+permissions:
+  oakshards.player.balance:
+    description: View your shard balance
+    default: true
+  oakshards.player.balance.others:
+    description: View other players shard balance
+    default: op
+  oakshards.player.top:
+    description: View top shard holders
+    default: true
+  oakshards.player.shop:
+    description: Open the shard shop
+    default: true
+  oakshards.player.afkinfo:
+    description: View your AFK status
+    default: true
+  oakshards.admin.reload:
+    description: Reload all configs
+    default: op
+  oakshards.admin.give:
+    description: Give shards to players
+    default: op
+  oakshards.admin.take:
+    description: Take shards from players
+    default: op
+  oakshards.admin.set:
+    description: Set player shard balance
+    default: op
+  oakshards.admin.afkarea:
+    description: Manage AFK areas
+    default: op
+  oakshards.admin.shop.edit:
+    description: Edit shop in-game
+    default: op

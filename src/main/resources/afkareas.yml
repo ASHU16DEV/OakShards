@@ -1,0 +1,34 @@
+# ============================================
+#         OakShards AFK Areas Config
+#            Author: ASHU16
+# ============================================
+# Each AFK area can have its own settings
+# If interval-seconds or shards-per-interval is not set,
+# it will use the global values from config.yml
+
+afk-areas:
+  example_area:
+    enabled: true
+    world: world
+    pos1: "100,60,100"
+    pos2: "120,70,120"
+    interval-seconds: 60
+    shards-per-interval: 1
+    entry-title: "&a&lAFK Zone"
+    entry-subtitle: "&7Earn &e1 &7shard every &e60s"
+    leave-title: "&c&lLeaving AFK Zone"
+    leave-subtitle: "&7You stopped earning shards"
+    actionbar-format: "&aNext shard in: &f%time_formatted%"
+
+  vip_area:
+    enabled: true
+    world: world
+    pos1: "200,60,200"
+    pos2: "220,70,220"
+    interval-seconds: 30
+    shards-per-interval: 2
+    entry-title: "&6&lVIP AFK Zone"
+    entry-subtitle: "&7Earn &e2 &7shards every &e30s"
+    leave-title: "&c&lLeaving VIP Zone"
+    leave-subtitle: "&7You stopped earning bonus shards"
+    actionbar-format: "&6VIP &8| &aNext shard in: &f%time_formatted%"

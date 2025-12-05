@@ -1,0 +1,98 @@
+# ============================================
+#         OakShards Shop Config
+#            Author: ASHU16
+# ============================================
+# Slot numbers start from 0
+# Use {player} in commands to reference the buyer
+
+shop:
+  title: "&8&lShard Shop"
+  rows: 4
+  
+  filler:
+    enabled: true
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  
+  items:
+    diamond_sword:
+      slot: 10
+      material: DIAMOND_SWORD
+      amount: 1
+      display-name: "&b&lShard Sword"
+      lore:
+        - "&7A special sword bought with shards"
+        - ""
+        - "&7Cost: &a10 shards"
+        - ""
+        - "&eClick to purchase!"
+      cost: 10
+      buy-commands:
+        - "give {player} diamond_sword 1"
+    
+    golden_apple:
+      slot: 12
+      material: GOLDEN_APPLE
+      amount: 5
+      display-name: "&6&lGolden Apples"
+      lore:
+        - "&7A pack of 5 golden apples"
+        - ""
+        - "&7Cost: &a25 shards"
+        - ""
+        - "&eClick to purchase!"
+      cost: 25
+      buy-commands:
+        - "give {player} golden_apple 5"
+    
+    diamond_set:
+      slot: 14
+      material: DIAMOND_CHESTPLATE
+      amount: 1
+      display-name: "&b&lDiamond Armor Set"
+      lore:
+        - "&7Full diamond armor set"
+        - ""
+        - "&7Cost: &a100 shards"
+        - ""
+      cost: 100
+      buy-commands:
+        - "give {player} diamond_helmet 1"
+        - "give {player} diamond_chestplate 1"
+        - "give {player} diamond_leggings 1"
+        - "give {player} diamond_boots 1"
+    
+    elytra:
+      slot: 16
+      material: ELYTRA
+      amount: 1
+      display-name: "&d&lElytra Wings"
+      lore:
+        - "&7Fly through the skies!"
+        - ""
+        - "&7Cost: &a500 shards"
+        - ""
+      cost: 500
+      buy-commands:
+        - "give {player} elytra 1"
+
+confirm-gui:
+  enabled: true
+  title: "&8Confirm Purchase"
+  rows: 3
+  
+  confirm:
+    slot: 15
+    material: LIME_STAINED_GLASS_PANE
+    name: "&aConfirm"
+    lore:
+      - "&fClick to confirm purchase"
+  
+  cancel:
+    slot: 11
+    material: RED_STAINED_GLASS_PANE
+    name: "&cCancel"
+    lore:
+      - "&fClick to cancel"
+  
+  item-display-slot: 13

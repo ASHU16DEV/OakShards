@@ -1,0 +1,67 @@
+# ============================================
+#         OakShards Messages Config
+#            Author: ASHU16
+# ============================================
+# Color codes: &0-9, &a-f, &l, &n, &o, &m, &k, &r
+# Placeholders: %player%, %balance%, %amount%, %target%, %cost%, %item%, %area%, %prefix%
+
+prefix: "&8[&aOakShards&8] &r"
+
+general:
+  no-permission: "%prefix%&cYou do not have permission to do this."
+  player-not-found: "%prefix%&cPlayer not found."
+  invalid-number: "%prefix%&cPlease enter a valid number."
+  player-only: "%prefix%&cThis command can only be used by players."
+  reloaded: "%prefix%&aAll configurations have been reloaded!"
+
+balance:
+  self: "%prefix%&7You have &a%balance% &7shards."
+  other: "%prefix%&a%target% &7has &a%balance% &7shards."
+
+admin:
+  give: "%prefix%&aGiven &f%amount% &ashards to &f%player%&a."
+  take: "%prefix%&aTaken &f%amount% &ashards from &f%player%&a."
+  set: "%prefix%&aSet &f%player%&a's balance to &f%amount%&a."
+  not-enough-shards: "%prefix%&c%player% doesn't have enough shards."
+
+afk-area:
+  created: "%prefix%&aAFK area &f%area% &ahas been created!"
+  removed: "%prefix%&aAFK area &f%area% &ahas been removed!"
+  not-found: "%prefix%&cAFK area &f%area% &cnot found."
+  already-exists: "%prefix%&cAFK area &f%area% &calready exists."
+  pos1-set: "%prefix%&aPosition 1 set at your location."
+  pos2-set: "%prefix%&aPosition 2 set at your location."
+  need-positions: "%prefix%&cYou need to set both positions first."
+  list-header: "%prefix%&aAFK Areas:"
+  list-entry: "&8- &f%area% &7(%world%)"
+  list-empty: "%prefix%&7No AFK areas configured."
+
+shop:
+  open: "%prefix%&7Opening shard shop..."
+  not-enough-shards: "%prefix%&cYou need &f%cost% &cshards to buy this!"
+  purchase-success: "%prefix%&aYou bought &f%item% &afor &f%cost% &ashards!"
+  no-permission-item: "%prefix%&cYou don't have permission to buy this item."
+  inventory-full: "%prefix%&cYour inventory is full! Please make some space first."
+
+afk-info:
+  in-area: "%prefix%&7You are in AFK area: &a%area%"
+  not-in-area: "%prefix%&7You are not in any AFK area."
+  next-shard: "%prefix%&7Next shard in: &a%time_formatted%"
+  earning-rate: "%prefix%&7Earning &a%amount% &7shards every &a%interval%s"
+
+shard-earned: "%prefix%&a+%amount% shard%plural%!"
+
+top:
+  header: "&8&m----------&r &a&lTop Shard Holders &8&m----------"
+  entry: "&7%position%. &a%player% &8- &f%balance% shards"
+  footer: "&8&m-----------------------------------------"
+  empty: "%prefix%&7No players found."
+  page-info: "&7Page &a%page%&7/&a%total_pages%"
+
+editor:
+  title: "&8Shop Editor"
+  item-created: "%prefix%&aItem created successfully!"
+  item-removed: "%prefix%&aItem removed successfully!"
+  item-updated: "%prefix%&aItem updated successfully!"
+  enter-value: "%prefix%&7Enter the new value in chat:"
+  cancelled: "%prefix%&7Edit cancelled."

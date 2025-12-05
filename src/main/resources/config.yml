@@ -1,0 +1,36 @@
+# ============================================
+#            OakShards Configuration
+#            Author: ASHU16
+# ============================================
+
+general:
+  give-only-in-afk-areas: true
+  require-player-alive: true
+  ignore-spectator: true
+  save-interval-seconds: 120
+
+actionbar:
+  enabled: true
+  update-interval-ticks: 20
+  format: "&aNext shard in: &f%time_formatted%"
+
+titles:
+  use-per-area-messages: true
+  fade-in: 10
+  stay: 40
+  fade-out: 10
+
+global-entry-title: "&a&lAFK Zone"
+global-entry-subtitle: "&7Earn shards by standing here"
+global-leave-title: "&c&lLeaving AFK Zone"
+global-leave-subtitle: "&7You will no longer earn shards"
+
+storage:
+  method: sqlite
+  file: data.db
+
+file-watcher:
+  enabled: true
+  check-interval-seconds: 2
+
+debug: false
